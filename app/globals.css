@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  nav a {
+    @apply block px-4 py-3 rounded-full hover:bg-[#D0FFE0] landscape:px-0 landscape:py-1 landscape:rounded-none landscape:hover:bg-transparent landscape:hover:border-b-2  landscape:hover:border-b-[#00C141];
+  }
+
+  nav .active {
+    @apply bg-[#D0FFE0] landscape:bg-transparent landscape:border-b-2 landscape:font-semibold landscape:border-b-[#00C141];
+  }
+}
+

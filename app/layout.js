@@ -1,5 +1,6 @@
-import "./globals.css";
 import { Passion_One, Nunito } from "next/font/google";
+import Header from "./components/layouts/Header";
+import "./globals.css";
 
 export const metadata = {
   title: "Create Next App",
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${nunito.variable} ${passionOne.variable} font-nunito`}>
+        <Header />
         {children}
       </body>
     </html>
